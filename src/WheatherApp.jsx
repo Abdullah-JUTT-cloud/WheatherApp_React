@@ -11,10 +11,13 @@ export default function WheatherApp(){
         feelsLike:24,
         weather:"mist",
     });
+    let updateWeatherData=(newData)=>{
+        setWheatherData(newData);
+    }
  return(
     <>
         <h1 style={{textAlign:'center'}}>Wheather Widget!</h1>
-          <SearchBox/>
+          <SearchBox updateWeatherData={updateWeatherData}/>
       <InfoBox weatherData={weatherData}/>
     </>
  )
