@@ -1,13 +1,13 @@
 
-import './App.css'
-import SearchBox from './SearchBox.jsx'
+// import './App.css'
+import WheatherApp from './WheatherApp.jsx'
 function App() {
  
 
   return (
     <>
-      <h1>Wheather Widget!</h1>
-      <SearchBox/>
+     <WheatherApp/>
+    
     </>
   )
 }

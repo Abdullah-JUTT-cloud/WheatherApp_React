@@ -1,6 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import './SearchBox.css';
 
 export default function SearchBox() {
     const API_URL="https://api.openweathermap.org/data/2.5/weather";
@@ -21,12 +22,13 @@ export default function SearchBox() {
          let data= await response.json();
            
             let result={
+                city:city,
                 temperature:data.main.temp,
                 humidity:data.main.humidity,
                 tempMin:data.main.temp_min,
                 tempMax:data.main.temp_max,
                 feelsLike:data.main.feels_like,
-                description:data.weather[0].description,
+                weather:data.weather[0].description,
             }
             console.log(result);
     }
