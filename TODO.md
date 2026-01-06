@@ -1,0 +1,4 @@
+- [x] Write CSS for InfoBox.css with custom theme, animations, and transitions
+- [x] Increase InfoBox card size in InfoBox.jsx
+- [x] Refine InfoBox.css with simpler theme
+- [x] Write CSS for SearchBox.css

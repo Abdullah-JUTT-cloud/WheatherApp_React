@@ -1,0 +1,57 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #F0F8FF; /* Alice blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.searchBox h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.searchBox form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.searchBox .MuiTextField-root {
+  width: 100%;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBox .MuiTextField-root:hover {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.searchBox .MuiButton-root {
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.searchBox .MuiButton-root:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

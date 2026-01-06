@@ -1,0 +1,33 @@
+.infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #E0F6FF; Simple light blue background */
+  /* min-height: 100vh; */
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.infoBox .MuiCard-root {
+  width: 60%;
+  height: 500px;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.infoBox .MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
